@@ -1,0 +1,8 @@
+
+main{
+    grid-area: title;
+}
+
+aside{
+    grid-area: login;
+}

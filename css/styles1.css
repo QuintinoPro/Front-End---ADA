@@ -1,0 +1,28 @@
+
+.boxes{
+    height: calc(100vh);
+    position: relative;
+
+    display: grid;
+    justify-content: flex-start;
+    gap: 2rem 5rem;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    margin: 15px;
+    padding: 30px;
+    background-color: yellow;
+    border: 2px solid green;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+}
+
+.box:nth-child(1){
+    position: relative;
+}

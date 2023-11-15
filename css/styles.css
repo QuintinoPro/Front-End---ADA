@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+}
+
+main{
+    padding-top: 37px;
+}
+
+h1{
+    color: green;
+    background-color: yellow;
+    font-size: 77px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    color: green;
+    font-size: 37px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg{
+    background-image: url('https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+p{
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+}
+
+nav.menu{
+    position: fixed;
+    background-color: yellow;
+    width: 100%;
+    height: 37px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+}
+
+table, td , th{
+    font-size: 17px;
+    border: 1px solid black;
+    
+}
+
+table thead tr:first-child{
+    background-color: chartreuse;
+}
+
+table tr:nth-child(2n +2){
+    background-color: yellowgreen;
+}
+
+ul,ol{
+    padding-left: 2.4rem;
+}
+
+ul{
+    list-style: circle;
+}
+
+ol{
+    list-style: decimal-leading-zero;
+}
+
+.boxes{
+    position: relative;
+    display: flex;
+
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    margin: 15px;
+    padding: 30px;
+    background-color: yellow;
+    border: 2px solid green;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+}
+
+.box:nth-child(1){
+    position: relative;
+}
+
+.contact-list h2{
+    top: 37px;
+    position: sticky;
+    background-color: yellowgreen;
+
+}
+
+.company-tb{
+    
+}
+
+[data-button="products"]{
+    background-color: chartreuse;
+    color: whitesmoke;
+    border: none;
+    font-size: 20px;
+    padding: 10px 60px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    
+}
+
+[data-button="products"]:hover{
+    transform: scale(1.5);
+    background-color: yellow;
+}
+
+[data-company="GCO"]{
+    background-color: yellow;
+}
+
+@media screen and (min-width: 1000px) {
+    .bg{
+        height: 50vh;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width:999px){
+    .bg{
+        height: 80vh;
+    }
+}
+
+@media print {
+    .bg{
+        display: none;
+    }
+}
